@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetButton>
+	<Name>Bar2</Name>
+	<Priority>1</Priority>
+	<IgnoreDblClick>true</IgnoreDblClick>
+	<Children>
+	</Children>
+	<Placement>
+		<QuantumScale>false</QuantumScale>
+		<X>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Size>300</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Sizing>WIDGET_SIZING_DEFAULT</Sizing>
+			<Size>40</Size>
+			<PosY>45</PosY>
+		</Y>
+	</Placement>
+	<Visible>false</Visible>
+	<Enabled>true</Enabled>
+	<TransparentInput>true</TransparentInput>
+	<Variants>
+		<Item>
+			<StateNormal>
+				<LayerMain href="ButtonBar.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
+			</StateNormal>
+			<Reaction>OnBarClick</Reaction>
+			<ReactionRightClick>OnBarAltClick</ReactionRightClick>
+		</Item>
+	</Variants>
+</WidgetButton>

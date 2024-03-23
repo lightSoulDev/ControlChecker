@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIRelatedTextures>
+	<Items>
+		<Item>
+			<name>UNIT</name>
+			<textureItem href="/Interface/Icons/Spells/MegaWarPetsSupport.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+		<Item>
+			<name>test</name>
+			<textureItem href="/Interface/Icons/Spells/Engineer/Drone.(UISingleTexture).xdb#xpointer(/UISingleTexture)" />
+		</Item>
+	</Items>
+</UIRelatedTextures>

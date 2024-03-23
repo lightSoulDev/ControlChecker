@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIAddon>
+	<Name>ControlChecker</Name>
+	<AutoStart>true</AutoStart>
+	<ScriptFileRefs>
+	    <Item href="/Mods/SampleCommon/SampleAddonBase.lua"/>
+		<Item href="src/locale.lua"/>
+
+		<Item href="src/libs/Logger.lua"/>
+		<Item href="src/libs/Utils.lua"/>
+		<Item href="src/libs/DnD.lua"/>
+		<Item href="src/libs/SettingsUI.lua"/>
+
+		<Item href="controls.lua"/>
+		<Item href="src/mainscript.lua"/>
+	</ScriptFileRefs>
+	<visObjects href=""/>
+	<texts href=""/>
+	<textures href=""/>
+	<addon_name>ControlChecker</addon_name>
+	<localizedNameFileRef href="info/name.txt"/>
+	<localizedDescFileRef href="info/desc.txt"/>
+	<texturesGroups>
+		<Item>
+			<groupName>RELATED_TEXTURES</groupName>
+			<textures href="RelatedTextures.(UIRelatedTextures).xdb#xpointer(/UIRelatedTextures)"/>
+		</Item>
+	</texturesGroups>
+</UIAddon>

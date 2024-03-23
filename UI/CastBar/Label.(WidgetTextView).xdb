@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WidgetTextView>
+<Name>Label</Name>
+<Priority>2</Priority>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+			<Pos>0</Pos>
+			<HighPos>0</HighPos>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+			<Pos>0</Pos>
+			<Size>0</Size>
+		</Y>
+	</Placement>
+	<FormatFileRef href="Label.txt" />
+	<TextStyle>
+		<multiline>false</multiline>
+		<wrapText>false</wrapText>
+		<showClippedSymbol>true</showClippedSymbol>
+        <showClippedLine>true</showClippedLine>
+		<ellipsis>false</ellipsis>
+	</TextStyle>
+	<TransparentInput>true</TransparentInput>
+</WidgetTextView>
