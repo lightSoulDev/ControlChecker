@@ -14,6 +14,7 @@
 		<Item href="controls.lua"/>
 		<Item href="src/mainscript.lua"/>
 	</ScriptFileRefs>
+  	<Form href="UI/MainForm.(WidgetForm).xdb"/>
 	<visObjects href=""/>
 	<texts href=""/>
 	<textures href=""/>

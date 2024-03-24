@@ -6,7 +6,7 @@
 			<textureItem href="ClientTextures/Interface/Icons/Spells/MegaWarPetsSupport.(UISingleTexture).xdb" />
 		</Item>
 		<Item>
-			<name>test</name>
+			<name>Паук-подавитель</name>
 			<textureItem href="ClientTextures/Interface/Icons/Spells/Engineer/Drone.(UISingleTexture).xdb" />
 		</Item>
 	</Items>
