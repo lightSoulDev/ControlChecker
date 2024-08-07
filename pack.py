@@ -46,9 +46,9 @@ def main(args):
                 newPath = os.path.join(root, name[:-4]).replace('src', f'{addonName}\compiled') + ".luac"
                 newPath = os.path.abspath(newPath)
                 os.makedirs(os.path.dirname(newPath), exist_ok=True)
-                command = f"luajit-2.0.5.exe -b \"{os.path.abspath(os.path.join(root, name))}\" \"{newPath}\""
+                command = f"luajit.exe -b \"{os.path.abspath(os.path.join(root, name))}\" \"{newPath}\""
                 prev = os.getcwd()
-                os.chdir("C:\\AO\\tools\\compile")
+                os.chdir("C:\\AO\\tools\\compile\\x86")
                 os.system(command)
                 os.chdir(prev)
     
@@ -61,6 +61,21 @@ def main(args):
     lines[0] = lines[0].replace("Dev ", "")
     with open(f"{addonName}/info/name.txt", "w", encoding="UTF-16 LE") as f:
         f.writelines(lines)
+    
+    if os.path.exists("_pak/Mods/Addons"):
+        shutil.rmtree("_pak/Mods/Addons")
+
+    if os.path.exists(f"{addonName}.pak"):
+        os.remove(f"{addonName}.pak")
+    if os.path.exists(f"{addonName}.zip"):
+        os.remove(f"{addonName}.zip")
+
+    os.makedirs("_pak/Mods/Addons")
+    shutil.move(addonName, "_pak/Mods/Addons")
+    shutil.make_archive(addonName, 'zip', "_pak")
+    os.rename(f"{addonName}.zip", f"{addonName}.pak")
+    shutil.rmtree("_pak")
+
 
 if __name__ == "__main__":
     main(sys.argv[1:])
